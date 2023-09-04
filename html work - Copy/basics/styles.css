@@ -1,0 +1,132 @@
+@import url('https://fonts.google.com/specimen/Poppins')
+{
+padding:0;
+margin:0;
+}
+body{
+	font-family: 'Poppins','sans-serif';
+	width:100%;
+	height:100vh;
+	background: #121213;
+	display:grid;
+	place-items:center;
+	position:relative;
+
+}
+header{
+	width:85%;
+	height:95%;
+	border:1px solid #fff;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+	
+	 
+/*	position:relative;*/
+	
+}
+
+header .menu_side,.song_side{
+	width:25%;
+	height:90%;
+	border:1px solid #fff;
+
+/*	position:absolute;*/
+}
+header .song_side{
+	width:75%;
+	background:#0b1320;
+	/*position:absolute;*/
+
+}
+header .menu_side{
+	color:white;
+}
+.master_player{
+	
+	width:100%;
+	height:9%;
+	border:1px solid #fff;
+	background:#0b1320;
+	margin-left: -25%;
+	/*position:absolute;*/
+}
+header .menu_side h1{
+	font-size: 20px;
+	font-weight: 600;
+	margin-left:30px;
+	
+}
+header .menu_side .playlist{
+	margin-left:15px;
+}
+header .menu_side .playlist h4 i{
+	margin-right:5px;
+}
+header .menu_side .playlist h4{
+	font-weight:600;
+	font-size:15px;
+	margin-left:15px;
+	color:#4c5262;
+	cursor:pointer; 
+	display:flex;
+	align-items: center;
+	transition: 0.1s linear;
+}
+header .menu_side .playlist h4:hover{
+	color:white;
+}
+header .menu_side .playlist h4 span{
+	position:relative;
+	margin-right:25px;
+}
+header .menu_side .playlist h4 span::before{
+	content:'';
+	position:absolute;
+	width:4px;
+	height:4px;
+	border:2px solid #4c5262;
+	border-radius:50%;
+	top:-5px;
+	transition:0.1s linear; 
+}
+header .menu_side .playlist h4:hover span::before{
+	border:2px solid white; 
+}
+header .menu_side .playlist h4 .fa-solid{
+	display:none; 
+}
+header .menu_side .playlist .active{
+	color:#36e2ec;
+}
+header .menu_side .playlist .active span{
+	display:none;
+}
+header .menu_side .playlist .active .fa-solid{
+	display:flex;
+	margin-right:20px;
+}
+header .menu_side .menu_song{
+	width:100%;
+	height:300px;
+	border:1px solid #fff;
+	margin-top:20px;
+}
+header .menu_side .menu_song li{
+	list-style: none;
+	position:relative;
+	display:flex;
+	align-items: center;
+	cursor: pointer;
+	padding:5px 0px 5px 20px;
+	margin-bottom:5px;
+	transition: 0.3s linear;
+}
+header .menu_side .menu_song li:hover{
+	background: rgb(105,105,105,0.2);
+}
+header .menu_side .menu_song li span{
+	font-size:12px;
+	font-weight:600;
+	color:#4c5262;
+}
